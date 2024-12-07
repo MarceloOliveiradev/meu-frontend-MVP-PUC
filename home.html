@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja de Imãs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+      <div class="title">
+        <h1>Loja de Imãs</h1>
+        <p>Encontre os imãs ideais para suas aplicações!</p>
+      </div>
+      <div class="banner">
+        <img src="img/magnets_1200x400.png" alt="Banner da Loja" />
+      </div>
+    </header>
+
+    <section class="newItem">
+      <!-- Nova aba de pesquisa -->
+      <div class="search">
+        <input
+          type="text"
+          id="searchMedidaIma"
+          placeholder="Pesquisar pela medida do Imã:"
+        />
+        <button onclick="pesquisarIma()" class="searchBtn">Buscar Imã</button>
+
+        <!-- Formulário para adicionar um novo imã -->
+      </div>
+      <input type="text" id="newMedida" placeholder="Medida do Imã:" />
+      <input type="text" id="newFormato" placeholder="Formato do Imã:" />
+      <input type="text" id="newForca" placeholder="Força do Imã (ex: N35):" />
+      <input type="number" id="newPreco" placeholder="Preço:" />
+      <td>
+        <button onclick="addIman()" class="addBtn">Adicionar Imã</button>
+      </td>
+    </section>
+
+    <!-- Exibe o resultado da pesquisa -->
+    <div id="searchResult"></div>
+
+    <!-- Lista de imãs -->
+    <section class="items">
+      <h2>Imãs Disponíveis</h2>
+      <table id="itemsTable">
+        <thead>
+          <tr>
+            <th>Medida</th>
+            <th>Formato</th>
+            <th>Força</th>
+            <th>Preço</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="itemsList">
+          <!-- Itens serão listados aqui via JavaScript -->
+        </tbody>
+      </table>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

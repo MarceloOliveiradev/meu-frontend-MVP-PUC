@@ -1,0 +1,152 @@
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #8b0c0c;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+header .title h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header .banner img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* Seção de Adicionar Imã */
+.newItem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.newItem input {
+  margin: 5px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.newItem .addBtn {
+  background-color: #8b0c0c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.newItem .addBtn:hover {
+  background-color: #080801;
+}
+
+/* Tabela de Imãs */
+.items {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f1f1f1;
+}
+
+table td img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 400px;
+  border: 1px solid black;
+}
+
+.newItem {
+  display: flex;
+
+  align-items: center;
+  gap: 10px;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+}
+
+.search input {
+  padding: 5px;
+  width: 200px;
+}
+
+.search button {
+  background-color: #8b0c0c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.search button:hover {
+  background-color: #080801;
+}
+
+#searchResult {
+  width: 50%;
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#searchResult h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+#searchResult p {
+  margin: 5px 0;
+  font-size: 1.1em;
+  color: #555;
+}
